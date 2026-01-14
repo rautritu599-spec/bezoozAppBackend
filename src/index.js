@@ -15,7 +15,7 @@ import url from "url";
 
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5000;
 const app = express();
 const server = createServer(app);
 
