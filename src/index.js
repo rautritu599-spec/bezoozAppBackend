@@ -10,6 +10,9 @@ import "./models/connection.js";
 import messageRouter from "./routes/message.route.js";
 import addCourseRouter from "./routes/addcourse.route.js";
 import paymentRouter from "./routes/payment.route.js";
+import studentRouter from './routes/student.route.js';
+import signupRouter from './routes/signup.route.js';
+import complaintRouter from './routes/complaint.route.js';
 import path from "path";
 import url from "url";
 
@@ -41,6 +44,10 @@ app.get("/", (req, res) => res.send("Server is running"));
 app.use("/api/message", messageRouter);
 app.use("/api", addCourseRouter);
 app.use("/api/payment", paymentRouter);
+app.use("/upload", express.static("public/upload"));
+app.use("/signup", signupRouter);
+app.use("/student", studentRouter);
+app.use("/complaint", complaintRouter);
 
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
