@@ -12,7 +12,7 @@ import addCourseRouter from "./routes/addcourse.route.js";
 import paymentRouter from "./routes/payment.route.js";
 import studentRouter from './routes/student.route.js';
 import signupRouter from './routes/signup.route.js';
-import complaintRouter from './src/routes/complaint.route.js';
+import complaintRouter from './routes/complaint.route.js';
 import "./models/connection.js";
 import path from "path";
 import url from "url";

@@ -1,6 +1,7 @@
 import express from "express";
 import * as signupController from "../controller/signup.controller.js";
 const route = express.Router();
+
 route.get("/test", (req, res) => {
   res.send("Signup route working");
 });
