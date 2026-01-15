@@ -13,7 +13,7 @@ export const saveStatus = async (req, res) => {
   var _id = (len == 0) ? 1 : signuptList[len - 1]._id + 1;
   var signupDetail = req.body;
   signupDetail = { ...signupDetail, "_id": _id, "role": "teacher", "status": 0, "info": Date() };
-console.error("Save studentdetail :", signupDetail);
+console.error("Save teacherdetail :", signupDetail);
 
 
 
