@@ -29,7 +29,7 @@ console.error("Save teacherdetail :", signupDetail);
     status: false,
     message: err.message,
     stack: err.stack
-    
+  
   });
 }
 
