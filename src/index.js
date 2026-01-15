@@ -36,6 +36,10 @@ app.use(
     limits: { fileSize: 50 * 1024 * 1024 },
   })
 );
+app.use((req, res, next) => {
+  console.log(`${req.method} request received at: ${req.url}`);
+  next();
+});
 
 app.use(cors());
 app.use(express.json());
